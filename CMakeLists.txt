@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.2)
+﻿cmake_minimum_required(VERSION 3.13)
 
 project(ip_filter VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
@@ -50,7 +50,7 @@ else ()
 endif()
 
 
-#install(TARGETS simpleIP4 RUNTIME DESTINATION bin)
+install(TARGETS ip_filter RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
