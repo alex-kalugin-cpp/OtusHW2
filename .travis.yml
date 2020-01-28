@@ -8,7 +8,7 @@ script:
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
-#- ls
+- ls
 deploy:
   provider: script
   skip_cleanup: true
