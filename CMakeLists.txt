@@ -50,7 +50,7 @@ else ()
 endif()
 
 
-install(TARGETS simpleIP4 RUNTIME DESTINATION bin)
+#install(TARGETS simpleIP4 RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
