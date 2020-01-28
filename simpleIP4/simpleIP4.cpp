@@ -4,19 +4,24 @@
 SimpleIP4::SimpleIP4(unsigned short b1,unsigned short b2,unsigned short b3,unsigned short b4)
 {
     if (b1 > 255) {
-          throw std::logic_error("Byte 1 value is invalid: " + std::to_string(b1));
+         // throw std::logic_error("Byte 1 value is invalid: " + std::to_string(b1));
+        // to_string не работет в travis ???
+        throw std::logic_error("Byte 1 value is invalid: ");
         }
     byte1 = b1;
     if (b2 > 255) {
-          throw std::logic_error("Byte 2 value is invalid: " + std::to_string(b2));
+          //throw std::logic_error("Byte 2 value is invalid: " + std::to_string(b2));
+        throw std::logic_error("Byte 2 value is invalid: ");
         }
     byte2 = b2;
     if (b3 > 255) {
-          throw std::logic_error("Byte 3 value is invalid: " + std::to_string(b3));
+          //throw std::logic_error("Byte 3 value is invalid: " + std::to_string(b3));
+        throw std::logic_error("Byte 3 value is invalid: ");
         }
     byte3 = b3;
     if (b4 > 255) {
-          throw std::logic_error("Byte 4 value is invalid: " + std::to_string(b4));
+         // throw std::logic_error("Byte 4 value is invalid: " + std::to_string(b4));
+        throw std::logic_error("Byte 4 value is invalid: ");
         }
     byte4 = b4;
 }
