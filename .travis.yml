@@ -8,10 +8,9 @@ script:
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
-#- ls
+- ls
 deploy:
   provider: script
   skip_cleanup: true
   script:
-  - ls
   - curl -T ip_filter-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ualex-kalugin-cpp:$BINTRAY_API_KEY "https://api.bintray.com/content/alex-kalugin-cpp/Otus-cpp2/ip_filter/$TRAVIS_BUILD_NUMBER/ip_filter-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
