@@ -9,7 +9,7 @@ script:
 - cmake --build . --target test
 - cmake --build . --target package
 - ls
-- cat ip_filter.tsv | ip_filter | md5sum
+- cat ip_filter.tsv | ./ip_filter | md5sum
 deploy:
   provider: script
   skip_cleanup: true
