@@ -5,6 +5,7 @@
 #include <string>
 #include <boost/test/unit_test.hpp>
 // сюда надо еще кучу тестов, а может нет
+//test
 BOOST_AUTO_TEST_SUITE(test_simpleIP4)
 
 BOOST_AUTO_TEST_CASE(test_consructor)
